@@ -31,3 +31,11 @@ def reverse1(string):
 
 string1 = "the quick brown fox jumps over the lazy dog"
 reverse1(string1)
+
+#string reversal self-written
+def reverse2(string):
+    reverse_string = ""
+    for index in range(0, len(string)):
+        reverse_string += string[len(string)-1-index]
+    print reverse_string
+    return reverse_string
