@@ -54,3 +54,14 @@ def madlibs():
     return string
 
 madlibs()
+
+#anagram
+def anagram(word):
+    anagram_word = ""
+    for index in range(0, len(word)):
+        anagram_word = ''.join(random.sample(word,len(word)))
+    print anagram_word
+    return anagram_word
+
+word = "supercalifragilisticexpialidocious"
+anagram(word)
