@@ -39,3 +39,18 @@ def reverse2(string):
         reverse_string += string[len(string)-1-index]
     print reverse_string
     return reverse_string
+
+string2 = "the quick brown fox jumps over the lazy dog"
+reverse2(string2)
+
+#madlibs
+def madlibs():
+    quick = raw_input("Enter verb: ")
+    brown = raw_input("Enter color: ")
+    jumps = raw_input("Enter verb: ")
+    dog = raw_input("Enter animal name: ")
+    string = "the " + quick + " " + brown + " fox " + jumps + " over the lazy " + dog
+    print string
+    return string
+
+madlibs()
