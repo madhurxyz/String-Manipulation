@@ -9,3 +9,16 @@ def shuffle(array):
 
 string_array1 = ['how', 'now', 'brown','cow', 'bow', 'plow', 'wow', 'clown']
 shuffle(string_array1)
+
+# array-shuffler self-written
+def rearrange(array):
+    rand_array = []
+    for index in range(0, len(array)):
+        rand_index = random.randint(0, len(array) - 1)
+        rand_array.append(array[rand_index])
+        array.pop(rand_index)
+    print rand_array
+    return rand_array
+
+string_array2 = ['how', 'now', 'brown','cow', 'bow', 'plow', 'wow', 'clown']
+rearrange(string_array2)
